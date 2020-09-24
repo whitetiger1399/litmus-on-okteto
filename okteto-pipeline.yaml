@@ -1,4 +1,5 @@
 icon: https://raw.githubusercontent.com/litmuschaos/icons/master/litmus.png
 deploy:
+  - helm upgrade --install litmuschaos okteto/litmuschaos --skip-crds --history-max 1
   - kubectl apply -f https://raw.githubusercontent.com/litmuschaos/litmus/v1.8.x/litmus-portal/k8s-manifest.yml
   
