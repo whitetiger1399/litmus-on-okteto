@@ -1,5 +1,4 @@
 icon: https://raw.githubusercontent.com/litmuschaos/icons/master/litmus.png
 deploy:
-  - helm repo add okteto https://apps.okteto.com && helm repo update
   - kubectl apply -f https://raw.githubusercontent.com/litmuschaos/litmus/v1.8.x/litmus-portal/k8s-manifest.yml
   
